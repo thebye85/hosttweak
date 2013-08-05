@@ -1,0 +1,13 @@
+Source: hosttweak
+Version: 0.2
+Section: utils
+Priority: optional
+Maintainer: thebye85 <thebye85@gmail.com>
+Build-Depends: debhelper (>= 4.0.0)
+Standards-Version: 3.6.2
+
+Package: hosttweak
+Architecture: all
+Depends:
+Description: hosttweak
+ hosttweak is a tool of editting and switching system hosts which always in /etc/hosts

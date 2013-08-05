@@ -1,0 +1,7 @@
+#!/usr/bin/python
+import sys
+sys.path.append("/usr/src/hosttweak")
+from host_tweak_ui import HostTweakUI
+
+if(__name__ == "__main__"):
+    HostTweakUI()

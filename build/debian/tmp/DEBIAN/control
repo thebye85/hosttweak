@@ -1,0 +1,9 @@
+Package: hosttweak
+Version: 0.2
+Architecture: all
+Maintainer: thebye85 <thebye85@gmail.com>
+Installed-Size: 79
+Section: utils
+Priority: optional
+Description: hosttweak
+ hosttweak is a tool of editting and switching system hosts which always in /etc/hosts

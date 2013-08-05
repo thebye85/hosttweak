@@ -1,0 +1,56 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Tsung.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+
+build:
+	# Nothing to do
+	
+binary: binary-arch binary-indep
+	# Nothing to do
+
+binary-arch: 
+	# Nothing to do
+
+#install: build
+#	dh_testdir
+#	dh_testroot
+#	dh_clean -k 
+#	dh_installdirs
+
+binary-indep:
+	dh_testdir
+	dh_installdirs
+
+	# custom package commands
+	#执行脚本
+	cp -r usr/bin/* debian/tmp/usr/bin/
+	#源代码
+	cp -r usr/src/hosttweak/* debian/tmp/usr/src/hosttweak/
+	#配置文件
+	cp -r usr/share/applications/* debian/tmp/usr/share/applications/
+	#icon
+	cp -r usr/share/pixmaps/hosttweak/* debian/tmp/usr/share/pixmaps/hosttweak/
+
+
+	# Resuming debhelper scripts
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_fixperms
+	dh_compress
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+.PHONY: binary binary-arch binary-indep build clean

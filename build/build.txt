@@ -1,0 +1,28 @@
+教程：
+http://blog.longwin.com.tw/2009/03/debian-linux-package-build-deb-2009/
+
+
+
+
+
+生成deb包
+cd build
+dpkg-buildpackage -rfakeroot -b 
+
+
+
+查看已安装的deb包
+dpkg --list | grep 'nxclient'
+
+安裝deb
+dpkg -i hosttweak_0.0.1-1_all.deb
+
+移除deb
+dpkg -r hosttweak
+
+
+
+
+
+
+

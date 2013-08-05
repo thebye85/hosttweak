@@ -1,0 +1,10 @@
+4408f6b1af15b5a7e05bc9ddb528306e  usr/bin/hosttweak
+91f3b00e48cd950be30ea4112c451568  usr/share/applications/host.desktop
+e178b2376fbb121cb31362e5780bfa4e  usr/share/doc/hosttweak/changelog.gz
+5da020f6b7d8561ba29799c0278d2678  usr/share/pixmaps/hosttweak/24x24/hosttweak.png
+43c096bb0465a6edbf5e1a7628371827  usr/share/pixmaps/hosttweak/32x32/hosttweak.png
+11fdbe0cd6eb4ca3a04048d15f4ecc4d  usr/src/hosttweak/encrypt_util.py
+84bf9664cbf22e9ea8fb22fe4edb5340  usr/src/hosttweak/host_config.py
+306d11202031798a333f5b1f2eb805ef  usr/src/hosttweak/host_tweak_handler.py
+84e898a86e328e7b5287bd26355cf0c0  usr/src/hosttweak/host_tweak_ui.py
+ac1374eba29e158f2e05bec70528a990  usr/src/hosttweak/main.py

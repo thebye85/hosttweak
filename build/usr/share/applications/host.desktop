@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=0.1
+Name=hosttweak
+Comment=host editting util
+GenericName=host editting tool
+Exec=/usr/bin/hosttweak
+Icon=/usr/share/pixmaps/hosttweak/32x32/hosttweak.png
+Terminal=false
+Categories=GTK;Development;IDE;System;
