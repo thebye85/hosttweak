@@ -46,7 +46,7 @@ class HostTweakUI:
 		window.set_default_size(400, 500) #窗口大小
 		window.set_position(gtk.WIN_POS_CENTER_ALWAYS) #默认在屏幕中间显示
 		window.set_resizable(True)  
-		window.set_title("host tweak v0.1")
+		window.set_title("host tweak v0.2")
 		window.set_border_width(0)
         
 		#VBox
@@ -401,7 +401,7 @@ class HostTweakUI:
 		about_dialog.set_destroy_with_parent(True)
 		about_dialog.set_name("hosttweak")
 		about_dialog.set_comments("hosttweak是一个快速修改和切换/etc/hosts文件的工具")
-		about_dialog.set_version("v0.1")
+		about_dialog.set_version("v0.2")
 		about_dialog.set_authors(["大进 <xiaojin.nxj@alibaba-inc.com>", "thebye85 <thebye85@gmail.com>"])
 		about_dialog.run()
 		about_dialog.destroy()
