@@ -10,11 +10,11 @@ host切换工具
 host.conf配置内容格式如下：
 
 [msp开发]
-127.0.0.1   msp.waptest.taobao.com
+127.0.0.1   xxx
 [msp日常]
-10.10.10.11   msp.waptest.taobao.com
+10.10.10.11   xxx
 [msp预发]
-174.1.1.1   msp.wapa.taobao.com
+174.1.1.1  xxx
 
 """
 class HostConfig:
@@ -197,7 +197,7 @@ if(__name__ == "__main__"):
     #修改host配置
     print hostConfig.get_config("msp日常")
     #修改host内容
-    hostConfig.add_or_update_config("msp日常", "10.10.10.10    msp.waptest.taobao.com")
+    hostConfig.add_or_update_config("msp日常", "10.10.10.10    xxx")
     #修改后
     print hostConfig.get_config("msp日常")
     """
@@ -205,7 +205,7 @@ if(__name__ == "__main__"):
     
     """
     #增加host配置
-    hostConfig.add_or_update_config("msp项目环境", "20.20.20.20    msp.waptest.taobao.com")
+    hostConfig.add_or_update_config("msp项目环境", "20.20.20.20    xxx")
     self.configMap = hostConfig.get_config_map()
     keyList = self.configMap.keys()
     keyList.sort()
